@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Creative Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Lottie for hero animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+  
+  <!-- p5.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js" defer></script>
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  
+  <!-- p5 background container -->
+  <div id="p5-background"></div>
+  
+  <header>
+    <h1 class="site-title">Designing with Code</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Designing with Code</h2>
+      <p>Bringing visuals to life through creativity and interaction.</p>
+      <button>Explore</button>
+    </div>
+    <div class="hero-animation">
+      <lottie-player
+        src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+  </section>
+
+  <main>
+    <section class="glass-panel" id="about">
+      <h3>About</h3>
+      <p>
+       Designing with code is an innovative approach that combines creativity and technology to create dynamic, interactive, and visually engaging experiences. This course focuses on understanding how coding tools and techniques—such as generative art, web development, and motion-based design—can be used as integral parts of the design process. Through experimentation and iterative exploration, students learn to harness programming languages and frameworks to bring ideas to life, enhancing user experience while pushing creative boundaries. The process emphasizes the importance of understanding how technology shapes design outcomes, assessing various methodologies, and integrating principles from creative coding and AI to develop functional and aesthetically compelling web applications. Ultimately, designing with code fosters a deeper appreciation of the relationship between art and technology, enabling designers to craft innovative digital solutions.
+      </p>
+    </section>
+
+    <section id="showcase">
+      <h3>Showcase</h3>
+      <p>
+       Our showcases highlight a diverse range of projects where design meets technology. These include generative art pieces created through algorithms, interactive web applications that provide smooth and engaging user experiences, and motion-based designs that bring visuals to life. Each project demonstrates a thoughtful integration of creative coding and design principles, reflecting experimentation, evolution, and a strong understanding of the tools and technologies learned in the course. These works serve as inspiration and proof of how code can be a powerful medium for creative expression.
+      </p>
+    </section>
+
+    <section id="services">
+      <h3>Services</h3>
+      <p>
+        We offer specialized services in designing and developing digital experiences that blend creativity with technology. This includes building responsive web applications, creating generative and interactive art, and implementing motion design for dynamic user interfaces. Our expertise extends to applying AI principles in design to produce innovative and personalized user experiences. Whether it’s a creative coding project, a user-focused website, or a motion-based interactive design, we focus on delivering solutions that are both visually compelling and functionally seamless.
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Let’s create something awesome together. Reach out at:</p>
+      <a href="mailto:abc19@gmail.com">abc19@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ABC Creative Studio</p>
+  </footer>
+
+</body>
+</html>

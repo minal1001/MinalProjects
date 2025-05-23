@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(120deg, #ffffff 0%, #f68084 100%);
+  color: #111;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004c99;
+}
+
+header {
+  background: #ffffffdd;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #333;
+}
+
+nav a {
+  margin-left: 2rem;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 3rem;
+  background-color: rgba(249, 249, 249, 0.85);
+  position: relative;
+  z-index: 5;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #0b2545;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.hero-content button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-content button:hover {
+  background: #005fa3;
+}
+
+.hero-animation {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+main {
+  padding: 4rem 3rem;
+  position: relative;
+  z-index: 5;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h3 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+section p,
+section a {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+glass-panel {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  color: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 5;
+}
+
+/* p5.js background canvas container */
+#p5-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    margin: 0;
+  }
+}
